@@ -1,0 +1,30 @@
+Simple Cognitive Agent
+
+Consider a squared room (n*n squares grid) and a cognitive agent, which has to collect all the objects from the room. In the room there are at most n2/3 objects and at most n obstacles. The agent can perform the same actions as the agent from the previous exercise. As opposed to the agent from the previous exercise, now the agent has memory. At each step of the environment’s (discreet) time, the agent can perform one of the following actions: move forward, move left, move right, and pick an object. The agent has sensors and can perceive if any of the adjacent cells is an obstacle. The agent can perceive if the current cell has an object to be picked. The agent is notified by the environment when there are no more objects in the room. The agent has a compass, so it knows its orientation. The agent has a means of storage for information, of theoretically unlimited size, but the quantity of information stored affects the points system. The quantity of information is measured by the agent in integers (ints). Points system: One operation consumes 1 point. The reward for picking an object is 10 points. The usage of one int per time step consumes 0.1 points. Note: It is mandatory that the agent has a means to correctly measure the quantity of useful information that it holds, regardless of the data structure that it uses to store it. Implement the cognitive agent that can solve the problem and have a maximum number of points at the end. Implement a means of visualization of the grid and of the agent’s position and orientation. A JFrame/JPanel window is preferred
+
+objective:
+	collect all objects from room
+
+terrain:
+	n * n grid with 2n / 3 objects and n obstacles
+
+movements:
+	turn left
+	turn right
+	move forward
+
+ablities:
+	cell is obstacle
+	cell has object
+
+commpace:
+	N, S, W, E
+
+
+feed:
+	there is no objects
+
+scooring:
+	1 operation = -1 point
+	1 object = +10 points
+	1 int/step = -0.1 point
